@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-primary: "Cormorant Garamond", serif;
+  --font-secondary: "Plus Jakarta Sans", sans-serif;
+
+  --ink-black: #081929;
+  --space-indigo: #272F44;
+  --khaki-beige: #BFA57E;
+}
