@@ -1,10 +1,47 @@
 @import "tailwindcss";
 
 @theme {
-  --font-primary: "Cormorant Garamond", serif;
+  --font-primary: "Times New Roman", serif;
   --font-secondary: "Plus Jakarta Sans", sans-serif;
 
-  --ink-black: #081929;
-  --space-indigo: #272F44;
-  --khaki-beige: #BFA57E;
+  --color-ink-black: #081929;
+  --color-space-indigo: #272F44;
+  --color-khaki-beige: #BFA57E;
+  --color-platinum: #E3E8EC;
+}
+
+@layer base {
+
+  body {
+    @apply overflow-x-hidden bg-platinum
+  }
+
+  button,
+  a {
+    @apply select-none cursor-pointer;
+  }
+
+  img {
+    @apply max-w-full h-auto align-middle;
+  }
+
+  html.lenis {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
 }

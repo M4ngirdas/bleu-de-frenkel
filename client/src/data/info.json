@@ -1,0 +1,38 @@
+{
+    "brand_name": "Bleu de Frenkel",
+    "tel_number": "+370 604 11811",
+    "email": "restoranas@frenkel.lt",
+    "address": "Vilniaus g. 74",
+    "city": "Šiauliai",
+    "working_hours": {
+        "monday": [
+            "Pirmadienis",
+            "12:00 - 21:00"
+        ],
+        "tuesdayToThursday": [
+            "Antradienis-Ketvirtadienis",
+            "11:00 - 22:00"
+        ],
+        "fridayToSaturday": [
+            "Penktadienis-Šeštadienis",
+            "11:00 - 23:00"
+        ],
+        "sunday": [
+            "Sekmadienis",
+            "11:00 - 21:00"
+        ]
+    },
+    "japanese_menu_hours": {
+        "tuesdayToThursday": [
+            "Antradienis-Ketvirtadienis",
+            "12:00 - 20:00"
+        ],
+        "fridayToSunday": [
+            "Penktadienis-Sekmadienis",
+            "12:00 - 21:00"
+        ]
+    },
+    "copyright": "Bleu de Frenkel. Visos teisės saugomos",
+    "google_maps_reviews": "https://www.google.com/maps/place/Bleu+de+Frenkel/@55.9254878,23.3260179,17z/data=!4m8!3m7!1s0x46e5e39dfa48505f:0xb4cd778652476e75!8m2!3d55.9254848!4d23.3285928!9m1!1b1!16s%2Fg%2F11vhzkc0yr?entry=ttu&g_ep=EgoyMDI2MDgwOS4wIKXMDSoASAFQAw%3D%3D",
+    "facebook": "https://www.facebook.com/BleudeFrenkel"
+}
