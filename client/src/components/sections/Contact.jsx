@@ -1,17 +1,17 @@
 import { motion } from "framer-motion"
 
-export default function Contact(props) {
-  const restaurantHours = [
-    { day: "Pirmadienis", hours: "12:00 - 21:00" },
-    { day: "Antradienis - Ketvirtadienis", hours: "11:00 - 22:00" },
-    { day: "Penktadienis - Šeštadienis", hours: "11:00 - 23:00" },
-    { day: "Sekmadienis", hours: "12:00 - 21:00" }
-  ]
+import info from "../../data/info.json"
 
-  const japaneseHours = [
-    { day: "Antradienis - Ketvirtadienis", hours: "12:00 - 20:00" },
-    { day: "Penktadienis - Sekmadienis", hours: "12:00 - 21:00" }
-  ]
+export default function Contact() {
+  const restaurantHours = Object.values(info.working_hours).map(([day, hours]) => ({
+    day,
+    hours
+  }))
+
+  const japaneseHours = Object.values(info.japanese_menu_hours).map(([day, hours]) => ({
+    day,
+    hours
+  }))
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -40,6 +40,8 @@ export default function Contact(props) {
       transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
     }
   }
+
+  const mapQuery = encodeURIComponent(`${info.address.street}, ${info.address.city}`)
 
   return (
     <section id="kontaktai" className="grid content-center min-h-screen pt-35 lg:pt-25 font-secondary text-ink-black">
@@ -72,10 +74,10 @@ export default function Contact(props) {
                   Telefonas
                 </span>
                 <a
-                  href="tel:+37060411811"
+                  href={`tel:${info.phone_number.replace(/\s+/g, "")}`}
                   className="text-base sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold text-space-indigo tracking-tight hover:underline underline-offset-4 truncate block w-fit"
                 >
-                  +370 604 11811
+                  {info.phone_number}
                 </a>
               </div>
 
@@ -84,10 +86,10 @@ export default function Contact(props) {
                   El. paštas
                 </span>
                 <a
-                  href="mailto:restoranas@frenkel.lt"
+                  href={`mailto:${info.email}`}
                   className="text-base sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold text-space-indigo tracking-tight hover:underline underline-offset-4 truncate block w-fit"
                 >
-                  restoranas@frenkel.lt
+                  {info.email}
                 </a>
               </div>
             </div>
@@ -123,7 +125,7 @@ export default function Contact(props) {
               <dl className="flex flex-col gap-3 sm:gap-8 my-0 pt-2 sm:pt-4">
                 {japaneseHours.map((item) => (
                   <div key={item.day} className="flex items-start justify-between gap-2">
-                    <dt className="text-xs sm:text-xs xl:text-sm font-light text-platinum/60 capitalize truncate">{item.day}</dt>
+                    <dt className="text-xs sm:text-xs xl:text-sm font-light text-platinum/60 capitalize">{item.day}</dt>
                     <dd className="text-xs sm:text-xs xl:text-sm font-semibold tracking-wide text-platinum whitespace-nowrap">{item.hours}</dd>
                   </div>
                 ))}
@@ -139,7 +141,7 @@ export default function Contact(props) {
         >
           <iframe
             title="Google Maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.229948481595!2d23.307312!3d55.928063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e6e307e6a0eef7%3A0x9c7a509a68e2dbb!2sVilniaus%20g.%2074%2C%20%C5%A0iauliai!5e0!3m2!1sen!2slt!4v1700000000000"
+            src={`https://maps.google.com/maps?q=${mapQuery}&t=&z=16&ie=UTF8&iwloc=&output=embed`}
             className="absolute inset-0 h-full w-full rounded-3xl"
             allowFullScreen=""
             loading="lazy"

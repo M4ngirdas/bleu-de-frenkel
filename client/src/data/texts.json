@@ -1,21 +1,4 @@
 {
-    "reviews": [
-        {
-            "text": "Stabtelėjome dienos pietų ir buvome labai maloniai nustebintos! Maistas gardus, aptarnavimas - dėmesingas ir nepriekaištingas, o restorano interjeras… be žodžių! Tikrai jautiesi kaip rūmuose. Didžiausios rekomendacijos tiek miesto svečiams, tiek vietiniams gyventojams. Tikrai bus sugrįžta!",
-            "name": "Indrė G.",
-            "initials": "IG"
-        },
-        {
-            "text": "Tobulas aptarnavimas, maistas labai skanus ir pasirinkimas ypač iš pusryčių meniu gan platus. Tobula atmosfera. Rami ir atpalaiduojanti muzika. Būtinai rekomentuosime draugams ir aplinkiniams. Dėkojame už puikiai praleistą laiką.",
-            "name": "Gintautas K.",
-            "initials": "GK"
-        },
-        {
-            "text": "Restoranas labai jaukiai įsikūręs, atmosfera labai raminanti. Sužavėjo profesionalus aptarnavimas, patiekimas. Maistas tobulo skanumo, o ypač desertas. Apsilankysime dar ne kartą.",
-            "name": "Monika",
-            "initials": "M"
-        }
-    ],
     "navLinks": [
         {
             "label": "Apie mus",
@@ -32,6 +15,26 @@
         {
             "label": "Kontaktai",
             "href": "#kontaktai"
+        }
+    ],
+    "hero_desc": "Unikalūs skoniai, elegantiška aplinka ir nepamirštamos akimirkos pačioje miesto širdyje.",
+    "about_desc_1": "Bleu de Frenkel yra restoranas, kuriame rasite kokybišką maistą, jaukią aplinką ir dėmesingą aptarnavimą. Čia ruošiame patiekalus iš atrinktų ingredientų, kad galėtumėte skaniai pavalgyti.",
+    "about_desc_2": "Mūsų erdvė tinka tiek pietums, tiek ramiems vakarams su draugais ar šeima. Užtikriname gerą skonį ir malonią patirtį kiekvieno apsilankymo metu.",
+    "reviews": [
+        {
+            "text": "Stabtelėjome dienos pietų ir buvome labai maloniai nustebintos! Maistas gardus, aptarnavimas - dėmesingas ir nepriekaištingas, o restorano interjeras… be žodžių! Tikrai jautiesi kaip rūmuose. Didžiausios rekomendacijos tiek miesto svečiams, tiek vietiniams gyventojams. Tikrai bus sugrįžta!",
+            "name": "Indrė G.",
+            "initials": "IG"
+        },
+        {
+            "text": "Tobulas aptarnavimas, maistas labai skanus ir pasirinkimas ypač iš pusryčių meniu gan platus. Tobula atmosfera. Rami ir atpalaiduojanti muzika. Būtinai rekomentuosime draugams ir aplinkiniams. Dėkojame už puikiai praleistą laiką.",
+            "name": "Gintautas K.",
+            "initials": "GK"
+        },
+        {
+            "text": "Restoranas labai jaukiai įsikūręs, atmosfera labai raminanti. Sužavėjo profesionalus aptarnavimas, patiekimas. Maistas tobulo skanumo, o ypač desertas. Apsilankysime dar ne kartą.",
+            "name": "Monika",
+            "initials": "M"
         }
     ]
 }

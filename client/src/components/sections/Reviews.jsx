@@ -63,7 +63,7 @@ export default function Reviews() {
   return (
     <section
       id="atsiliepimai"
-      className="grid content-center min-h-screen py-35 lg:py-45 font-secondary bg-khaki-beige text-[#081929]"
+      className="relative overflow-hidden grid content-center min-h-screen py-35 lg:py-45 font-secondary bg-khaki-beige text-[#081929]"
     >
       <div className="pointer-events-none absolute -right-16 -top-16 font-secondary text-[320px] font-bold leading-none select-none text-[#081929]/[0.025]">
         “
@@ -105,7 +105,7 @@ export default function Reviews() {
           className="mt-12 sm:mt-20 text-center"
         >
           <a
-            href={info.google_maps_reviews}
+            href={info.reviews_url}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 rounded-full border-2 border-[#081929] px-8 py-3 sm:px-10 sm:py-4 text-xs font-bold uppercase tracking-widest shadow-md transition-all duration-300 hover:brightness-150 hover:shadow-xl bg-[#081929] text-[#BFA57E] font-secondary"

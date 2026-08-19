@@ -28,7 +28,7 @@ export default function App() {
   return (
     <ReactLenis root options={{ autoRaf: true, lerp: 0.1 }}>
       <Header handleAnchorClick={handleAnchorClick} />
-      <main>
+      <main className="overflow-x-hidden">
         <Hero handleAnchorClick={handleAnchorClick} />
         <About />
         <Menu />

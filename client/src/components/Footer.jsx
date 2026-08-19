@@ -1,4 +1,5 @@
 import { LuArrowUpRight } from "react-icons/lu"
+
 import logo from "../images/logo.png"
 import info from "../data/info.json"
 import texts from "../data/texts.json"
@@ -14,17 +15,17 @@ export default function Footer(props) {
               onClick={ev => props.handleAnchorClick && props.handleAnchorClick(ev, "#pradzia")}
               href="#pradzia"
               className="group flex items-center self-start"
-              aria-label="Bleu de Frenkel pradžia"
+              aria-label={`${info.brand_name} pradžia`}
             >
               <img
                 src={logo}
-                alt="Bleu de Frenkel"
+                alt={info.brand_name}
                 className="h-24 sm:h-32 w-auto object-contain transition-transform group-hover:scale-105"
               />
             </a>
 
             <p className="max-w-sm text-xs sm:text-sm leading-relaxed text-slate-400">
-              Restoranas ir sushi terasa. Unikali aplinka bei išskirtinis skonių derinys Šiaulių širdyje.
+              {texts.hero_desc}
             </p>
           </div>
 
@@ -53,7 +54,7 @@ export default function Footer(props) {
             </p>
 
             <a
-              href="https://food.bolt.eu/en/251-siauliai/p/172331-bleu-de-frenkel-sushi-terasa-vilniaus-str/"
+              href={info.bolt_food_url}
               target="_blank"
               rel="noreferrer"
               className="group inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wider transition-colors text-slate-300 hover:text-khaki-beige"
@@ -69,7 +70,7 @@ export default function Footer(props) {
             </p>
 
             <a
-              href="https://bleu-de-frenkel.tablein.com/lt"
+              href={info.tablein_url}
               target="_blank"
               rel="noreferrer"
               className="group inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wider transition-colors text-slate-300 hover:text-khaki-beige"
